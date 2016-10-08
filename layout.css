@@ -20,8 +20,6 @@ layout
 	background: #282e37;
 }
 
-.row--banner { background: #aaa; }
-
 /* row-padding */
 .row--padding-medium
 {
@@ -38,7 +36,6 @@ layout
 }
 
 /* containers */
-
 .container-narrow,
 .container-medium,
 .container-wide
@@ -48,27 +45,13 @@ layout
 	padding-right: 1.5em;
 }
 
-.container-narrow
-{
-	max-width: 34em;
-	background: navy;
-}
-
-.container-medium
-{
-	max-width: 52em;
-	background: red;
-}
-
-.container-wide
-{
-	max-width: 58em;
-	background: yellow;
-}
+.container-narrow { max-width: 34em; }
+.container-medium { max-width: 52em; }
+.container-wide { max-width: 58em; }
 
 /* columns */
-
-
+.col-narrow,
+.col-narrow--right { margin-bottom: 1.5em; }
 
 /*------------------
 wide
@@ -89,6 +72,7 @@ wide
 		padding-bottom: 5.5556em;
 		/* 100px/18px */
 	}
+	
 	.container-narrow,
 	.container-medium,
 	.container-wide
@@ -97,4 +81,27 @@ wide
 		padding-right: 2em;
 	}
 
+	.col-narrow,
+	.col-medium,
+	.col-wide { float: left; }
+	.col-narrow--right,
+	.col-wide--right { float: right; }
+
+	.col-wide,
+	.col-wide--right { width: 61%; }
+
+	.col-medium { width: 50%; }
+
+	.col-narrow,
+	.col-narrow--right 
+	{ 
+		width: 25%; 
+		margin-bottom: 0;
+	}
 }
+
+/*-----------------------
+Other
+-----------------------*/
+
+/* .border { border-style: solid; } */
