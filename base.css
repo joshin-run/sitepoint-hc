@@ -23,21 +23,21 @@ h4,
 h5,
 h6
 {
-	margin: 0:
+	margin: 0;
 	color: #424242;
 	line-height: 1.1;
 }
 
 img
 {
-	max-width: 100%
+	max-width: 100%;
 	height: auto;
 	border: 0;
 	vertical-align: middle;
 }
 
-a:focus img { backgroiund: #000; }
-a:hover img { baground: #3bb2d0; }
+a:focus img { background: #000; }
+a:hover img { background: #3bb2d0; }
 a:active img {background: #af0000; }
 blockquote { margin: 0; }
 
